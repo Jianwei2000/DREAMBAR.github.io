@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery練習</title>
+    <link rel="logo icon" sizes="16x16" href="images/logo-icon.PNG">
+    <!--導入css-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--loading動畫-->
+    <div class="loading-wrap">
+        <div style="color: white" class="loading la-ball-spin-clockwise-fade-rotating la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>    
+    <div class="wrap">
+        <!--header-->
+        <div class="header">
+            <h1><a href="index.html">DREAM BAR</a></h1>
+            <ul class="menu">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="#">關於我們</a></li>
+                <li>
+                    <a href="#" class="dropdown">菜單</a>
+                    <ul class="dropdown-open">
+                        <li><a href="#">cocktails</a></li>
+                        <li><a href="#">mocktails</a></li>
+                        <li><a href="#">foods</a></li>
+                    </ul>
+                </li>
+                <li><a href="#s3" class="contactus">聯絡我們</a></li>
+            </ul>
+            <ul class="social-icon">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670274.png" alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/4494/4494467.png" alt="youtube"></a></li>
+            </ul>
+        </div>
+        <!--Swiper-->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <div class="banner-txt"><h2>WELCOME TO DREAM</h2></div>
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/banner1.jpg" alt="banner1"></div>
+            <div class="swiper-slide"><img src="images/banner2.jpg" alt="banner2"></div>
+            <div class="swiper-slide"><img src="images/banner3.jpg" alt="banner3"></div>
+            </div>
+        </div>    
+        <!--section1-->
+        <div class="section1">
+            <div class="left-cheers"><img src="images/left-cheers.png" alt="left-cheers"></div>
+            <div class="right-cheers"><img src="images/right-cheers.png" alt="right-cheers"></div>
+            <h2 data-aos="zoom-in"  data-aos-duration="3000">DRINK & DREAM</h2>
+            <p>繁忙的都市裡，一處鬧中取靜的角落</p>
+            <p>在這個空間裡，讓你拋開規則和束縛，小酌暢飲探索從未體驗的夢境</p>
+            <p >Enjoy Ruleless Night!</p>
+            <a href="#" class="s1-btn">探索</a>
+            
+        </div>
+        <!--section2-->
+        <div class="section2" >
+            <div class="s2-txt" >
+                <h2>Molecular Mixology</h2>
+                <p>本店招牌</p>
+                <h3>\</h3>
+                <p>如同風靡全球的分子料理</p>
+                <p>分子調酒也利用科學設備和技術為調酒世界翻開嶄新一頁</p>
+                <p>分子調酒不同於一般傳統調酒使用水果、利口酒或糖漿</p>
+                <p>而是以科學角度及專業器材萃取各種風味</p>
+                <p id="s2">在不斷的實驗中找出風味與酒的最佳平衡</p>
+            </div>
+                <div class="s2-bphoto">
+                    <a href="images/room.jpg" data-lightbox="roadtrip">
+                        <img src="images/room.jpg" alt="room" style="width: 100%;height: 100%;">
+                    </a>         
+                </div>
+            <div class="s2-sphoto">
+                <a href="images/cocktail1.jpg" data-lightbox="roadtrip" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-anchor="#s2" >
+                    <img src="images/cocktail1.jpg" alt="cocktail1">
+                </a>
+            </div>
+            <div class="s2-sphoto">
+                <a href="images/cocktail2.jpg" data-lightbox="roadtrip" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-anchor="#s2" data-aos-delay="1000">
+                    <img src="images/cocktail2.jpg" alt="cocktail2">
+                </a>    
+            </div>
+            <div class="s2-sphoto">
+                <a href="images/cocktail3.jpg" data-lightbox="roadtrip" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-anchor="#s2" data-aos-delay="2000">
+                    <img src="images/cocktail3.jpg" alt="cocktail3">
+                </a>
+            </div>
+            <div class="s2-sphoto">
+                <a href="images/cocktail4.jpg" data-lightbox="roadtrip" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-anchor="#s2" data-aos-delay="3000">
+                    <img src="images/cocktail4.jpg" alt="cocktail4">
+                </a>
+            </div>
+        </div>
+        <!--section3-->
+        <div id="s3" class="section3" data-aos="fade-up" data-aos-duration="3000">
+            <div class="s3-txt">
+                <h2 data-aos="zoom-in" data-aos-duration="10000">Join the club</h2>
+                <p>獲取特別活動的最新消息</p>
+            </div>
+            <form action="#">
+                <div class="s3-form">
+                    <input class="s3-mail" type="mail" name="mail" id="mail" placeholder="請輸入您的信箱" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <input class="s3-btn" type="submit" value="送出">
+                </div>  
+            </form>
+        </div>
+        <!--section4-->
+        <div class="section4">
+            <div class="s4-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000" data-aos-delay="2000">
+                <div class="card-left">
+                    <img src="images/logo-icon.PNG" alt="logo-icon">
+                    <ul class="social-icon">
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670274.png" alt="instagram"></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/4494/4494467.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+                <div class="card-right">
+                    <p>Sun. – Thu. 18:00 – 03:00 </p>
+                <p>Fri. – Sat. 18:00 – <span style="color: red;">04:00</span></p>
+                <br>
+                <p style="font-weight: bold;">預約訂位</p>
+                <a href="tel:+886 987654321">+886 987654321</a>
+                <br>
+                <p style="font-weight: bold;">地址</p>
+                <a href="https://www.google.com/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E9%87%8D%E6%85%B6%E5%8D%97%E8%B7%AF%E4%B8%80%E6%AE%B5122%E8%99%9F/@25.0403644,121.5097129,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a90a870e5af1:0x180e1a442209d1c1!8m2!3d25.0403596!4d121.5122878!16s%2Fg%2F12jsg7md9?entry=ttu" target="_blank">100台北市中正區重慶南路一段122號</a>
+                </div>            
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer"><p>© 2024 DREAM BAR desing by Jianwei</p></div>
+    </div>
+    <div class="top"><a href="#"><img src="images/up.png" alt="up"></a></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
